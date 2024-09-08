@@ -11,7 +11,7 @@ const projects = [
 
   {
     name: "This website!",
-    link: "https://github.com/AleksandrHovhannisyan/aleksandrhovhannisyan.com",
+    link: "https://redgerd.github.io/Portfolio/",
     description: "My online resume created with React and Sass.",
     technologies: ["react", "sass"],
   },

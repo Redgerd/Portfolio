@@ -1,4 +1,5 @@
 {
+  "homepage": "https://redgerd.github.io/Portfolio",
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +10,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-tsparticles": "^2.12.2",
     "sass": "^1.77.8",
     "typewriter-effect": "^2.21.0",
@@ -17,9 +18,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "REACT_APP_BUILD_DATE=$(date -u) react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,7 +43,10 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.45",
     "resolve-url-loader": "^5.0.0",
     "tailwindcss": "^3.4.10"
